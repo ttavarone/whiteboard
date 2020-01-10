@@ -1,0 +1,41 @@
+input {
+	margin: 2%;
+}
+div.input-group {
+	width: 90%;
+	margin: auto;
+	margin-bottom: 2%;
+}
+div#dailyback {
+	background-color: rgb(255,204,102);
+	width: 75%;
+	padding: 0;
+	margin-bottom: 2%;
+}
+div#taskback {
+	background-color: rgb(153,204,255);
+	width: 33%;
+	padding: 0;
+	margin-bottom: 2%; 
+}
+div#notesback {
+	background-color: rgb(102,255,102);
+	width: 33%;
+	padding: 0;
+	margin-bottom: 2%;
+}
+p#notes {
+	margin:auto;
+	padding: 2%;
+}
+label {
+	margin-left: 5%;
+}
+form {
+	width: 100%;
+	margin-right: auto;
+}
+h3 {
+	margin-left: 1%;
+}
+

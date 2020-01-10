@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard v1.0</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Whiteboard Editor</h1>
+    <p class="lead">January 9, 2020                  Overcast, 33&deg;</p>
+  </div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col" id="taskback">
+		<h3>Tasks</h3>
+			<form action="submit_task.php">
+				<div class="input-group mb-3">
+				  <div class="input-group-prepend">
+					<span class="input-group-text" id="basic-addon1">Task</span>
+				  </div>
+				  <input type="text" class="form-control" aria-label="Task" aria-describedby="basic-addon1">
+				</div>
+				
+				<div class="input-group mb-3">
+				  <div class="input-group-prepend">
+					<span class="input-group-text" id="basic-addon1">Notes</span>
+				  </div>
+				  <input type="text" class="form-control" aria-label="Notes" aria-describedby="basic-addon1">
+				</div>
+				
+				<div class="input-group mb-3">
+				  <div class="input-group-prepend">
+					<span class="input-group-text" id="basic-addon1">Due Date</span>
+				  </div>
+				  <input type="datetime-local" class="form-control" aria-label="Due Date" aria-describedby="basic-addon1">
+				</div>
+				
+				<div class="input-group mb-3">
+				  <div class="input-group-prepend">
+					<span class="input-group-text" id="basic-addon1">Priority</span>
+					</div>
+					  <input type="radio" class="custom-control-input" id="low" name="priority">
+					  <label class="custom-control-label" for="low">Low</label>
+					  
+					  <input type="radio" class="custom-control-input" id="med" name="priority">
+					  <label class="custom-control-label" for="med">Medium</label>
+					  
+					  <input type="radio" class="custom-control-input" id="high" name="priority">
+					  <label class="custom-control-label" for="high">High</label>
+				</div>
+				<input type="submit" name="submit">
+			</form>
+		</div>
+
+		<div class="col" id="notesback">
+		<h3>General Notes</h3>
+			<form action="submit_notes.php">
+				<div class="input-group">
+				  <div class="input-group-prepend">
+					<span class="input-group-text">Notes</span>
+				  </div>
+				  <textarea class="form-control" aria-label="Notes"></textarea>
+				</div>
+				
+				<input type="submit" name="submit">
+			</form>
+		</div>
+
+</body>
+<footer>
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="index.html">Viewer</a>
+  </li>
+  <li class="nav-item active">
+    <a class="nav-link" href="editor.html">Editor</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="creator.html" tabindex="-1" aria-disabled="true">Creator</a>
+  </li>
+</ul>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
