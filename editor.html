@@ -1,0 +1,56 @@
+<div class="container">
+	<div class="row">
+		<div class="col" id="taskback">
+		<h3>Tasks</h3>
+			<form action="submit_task.php">
+				<div class="input-group mb-3">
+				  <div class="input-group-prepend">
+					<span class="input-group-text" id="basic-addon1">Task</span>
+				  </div>
+				  <input type="text" class="form-control" aria-label="Task" aria-describedby="basic-addon1">
+				</div>
+				
+				<div class="input-group mb-3">
+				  <div class="input-group-prepend">
+					<span class="input-group-text" id="basic-addon1">Notes</span>
+				  </div>
+				  <input type="text" class="form-control" aria-label="Notes" aria-describedby="basic-addon1">
+				</div>
+				
+				<div class="input-group mb-3">
+				  <div class="input-group-prepend">
+					<span class="input-group-text" id="basic-addon1">Due Date</span>
+				  </div>
+				  <input type="datetime-local" class="form-control" aria-label="Due Date" aria-describedby="basic-addon1">
+				</div>
+				
+				<div class="input-group mb-3">
+				  <div class="input-group-prepend">
+					<span class="input-group-text" id="basic-addon1">Priority</span>
+					</div>
+					  <input type="radio" class="custom-control-input" id="low" name="priority">
+					  <label class="custom-control-label" for="low">Low</label>
+					  
+					  <input type="radio" class="custom-control-input" id="med" name="priority">
+					  <label class="custom-control-label" for="med">Medium</label>
+					  
+					  <input type="radio" class="custom-control-input" id="high" name="priority">
+					  <label class="custom-control-label" for="high">High</label>
+				</div>
+				<input type="submit" name="submit">
+			</form>
+		</div>
+
+		<div class="col" id="notesback">
+		<h3>General Notes</h3>
+			<form action="submit_notes.php">
+				<div class="input-group">
+				  <div class="input-group-prepend">
+					<span class="input-group-text">Notes</span>
+				  </div>
+				  <textarea class="form-control" aria-label="Notes"></textarea>
+				</div>
+				
+				<input type="submit" name="submit">
+			</form>
+		</div>
