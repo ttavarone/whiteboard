@@ -10,13 +10,14 @@ export class AppComponent {
   title = 'whiteboard';
   private taskTitle: String;
   private taskPriority: any;
+  model: any = {};
 
 
 	constructor(private afs: AngularFirestore){}
 
 	ngOnInit(){	
 		this.getTask();
-
+		taskTitle = this.taskTitleTest;
 	}
 
 	getTask(){
@@ -33,4 +34,13 @@ export class AppComponent {
 
   		console.log(taskTitleIn);
   	}
+
+  	submitTask() {
+	    // Add a new document with a generated id.
+		let addDoc = this.afs.collection('tasks-incomplete').add({
+		  title: this.taskTitleTest,
+		}).then(ref => {
+		  console.log('Added document with ID: ', ref.id);
+		});
+	}
 }

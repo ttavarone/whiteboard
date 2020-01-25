@@ -39,13 +39,13 @@
 		  <div class="card-body">
 		    <h5 class="card-title">Add Task</h5>
 			    <div class="card-text">
-			    	&#9744;{{taskTitle}}<br>
-					&#9744;This is a task.<br>
-					&#9745;This is another task.<br>
-					&#9745;This is a task with the date <b>1/22/20</b><br>
-					&#9744;This is a task that has not been completed.<br>
-					&#9745;This is a task that has been completed.<br>
-					&#9744;This is a task with a priority marker.<b>!!!</b><br>
+			    	<form (ngSubmit)=submitTask()>
+			    		 <div class="form-group">
+						    <label for="taskTitleTest">Title</label>
+						    <input type="text" class="form-control" id="taskTitleTest" [(ngModel)]=taskTitleTest aria-describedby="taskTitleTest">
+						  </div>
+						  <button type="submit" class="btn btn-primary">Submit</button>
+			    	</form>
 		    	</div>
 	  		</div>
 		</div>

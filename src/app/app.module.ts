@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { EditorComponent } from './editor/editor.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestore } from 'angularfire2/firestore';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { AngularFirestore } from 'angularfire2/firestore';
     messagingSenderId: "768541329799",
     appId: "1:768541329799:web:53f4c4af7a7ea0bcf56b22",
     measurementId: "G-068X0WR1SW"}),
+    FormsModule,
   ],
   providers: [ AngularFireModule, AngularFirestore ],
   bootstrap: [AppComponent]
